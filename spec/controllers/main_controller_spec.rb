@@ -3,9 +3,8 @@ require 'rails_helper'
 RSpec.describe MainController, type: :controller do
   render_views
 
-  describe "GET #index" do
-
-    it "returns http success" do
+  describe 'GET #index' do
+    it 'returns http success' do
       puts response.body
       get :index
       expect(response).to have_http_status(:success)
@@ -16,5 +15,4 @@ RSpec.describe MainController, type: :controller do
       expect(response.body).to match(/<script src="\/assets\/javascripts\/common.js"><\/script>/)
     end
   end
-
 end

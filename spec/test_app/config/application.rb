@@ -2,10 +2,10 @@ require_relative 'boot'
 
 # require 'rails/all'
 # dont need activerecord so remove.
-require "action_controller/railtie"
-require "action_mailer/railtie"
-require "sprockets/railtie"
-require "rails/test_unit/railtie"
+require 'action_controller/railtie'
+require 'action_mailer/railtie'
+require 'sprockets/railtie'
+require 'rails/test_unit/railtie'
 
 Bundler.require(*Rails.groups)
 require 'webpack_manifest_plugin'

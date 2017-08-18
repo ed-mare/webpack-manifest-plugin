@@ -1,6 +1,7 @@
 AllCops:
   Exclude:
     - 'spec/test_app/*'
+    - spec/controllers/main_controller_spec.rb
 Metrics/LineLength:
   Max: 120
   Exclude:
