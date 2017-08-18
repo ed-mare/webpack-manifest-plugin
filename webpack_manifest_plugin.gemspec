@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       = 'Gem that work with node webpack_manifest_plugin.'
   spec.description   = 'Provides a view helper for injecting asset paths managed by Webpack into Rails templates plus rake tasks.'
-  spec.homepage      = 'https://github.com/ed-mare/webpack-manifest-plugin'
+  spec.homepage      = 'https://github.com/ed-mare/webpack_manifest_plugin'
   spec.license       = 'MIT'
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'

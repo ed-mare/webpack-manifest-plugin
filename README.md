@@ -1,6 +1,6 @@
 # WebpackManifestPlugin
 
-This gem provides a way to use assets managed with `webpack` in Rails templates. The JavaScript  [webpack-manifest-plugin](https://www.npmjs.com/package/webpack-manifest-plugin) outputs a JSON file that maps assets to file paths. File paths can change depending on a webpack configuration -- a development config usually doesn't version assets while a production config does. Webpack updates CSS and JavaScript files with the file paths it outputs, but not Rails templates. This gem provides a view helper for including these assets in Rails views.
+This gem provides a way to use assets managed with `webpack` in Rails templates. JavaScript package  [webpack-manifest-plugin](https://www.npmjs.com/package/webpack-manifest-plugin) outputs a JSON file that maps assets to file paths. File paths can change depending on a webpack configuration -- a development config usually doesn't version assets while a production config does. Webpack updates CSS and JavaScript files with the file paths it outputs, but not Rails templates. This gem provides a view helper for including these assets in Rails views.
 
 **Warning** - this has not been used in a production environment - use at your own risk. Rigorous testing has not been done against different versions of Ruby and Rails -- it's been tested against Ruby 2.3.x and Rails 5.x.
 
@@ -155,7 +155,7 @@ rake spec # (or bundle exec rspec)
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/ed-mare/webpack-manifest-plugin. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/ed-mare/webpack_manifest_plugin. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 
 ## License
