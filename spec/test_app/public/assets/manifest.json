@@ -1,0 +1,6 @@
+{
+  "common.css": "/assets/stylesheets/common.css",
+  "common.js": "/assets/javascripts/common.js",
+  "fonts/fontawesome-webfont.ttf": "/assets/fonts/fontawesome-webfont.ttf",
+  "images/youtube.png": "/assets/images/youtube.png"
+}

@@ -1,0 +1,14 @@
+{
+  "common.css": "/assets/stylesheets/common.css",
+  "common.js": "/assets/javascripts/common.js",
+  "fonts/fontawesome-webfont.eot": "/assets/fonts/fontawesome-webfont.eot",
+  "fonts/fontawesome-webfont.svg?v=4.6.3": "/assets/fonts/fontawesome-webfont.svg",
+  "fonts/fontawesome-webfont.ttf?v=4.6.3": "/assets/fonts/fontawesome-webfont.ttf",
+  "images/login_cover.jpg": "/assets/images/login_cover.jpg",
+  "images/panel_bg.png": "/assets/images/panel_bg.png",
+  "images/seamless.png": "/assets/images/seamless.png",
+  "react.css": "/assets/stylesheets/react.css",
+  "react.js": "/assets/javascripts/react.js",
+  "test.css": "/assets/stylesheets/test.css",
+  "test.js": "/assets/javascripts/test.js"
+}

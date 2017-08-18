@@ -1,0 +1,13 @@
+AllCops:
+  Exclude:
+    - 'spec/test_app/*'
+Metrics/LineLength:
+  Max: 120
+  Exclude:
+    - 'spec/**/*'
+Metrics/BlockLength:
+  CountComments: false
+  Exclude:
+    - 'spec/**/*'
+    - 'lib/webpack_manifest_plugin/tasks/main.rake'
+    - 'webpack_manifest_plugin.gemspec'
