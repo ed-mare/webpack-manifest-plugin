@@ -80,8 +80,11 @@ If you want UJS and actioncable, add to package.json (with appropriate versions)
 # Configurations:
 
 # webpack_cmd - Command to execute webpack. Defaults to 'webpack'.
-# cache_manifest - boolean - defaults to false. If set to true, it loads the JSON file once and caches it in WebpackManifestPlugin.configuration.manifest. If false, it lazy loads it per request.
-# logger - defaults to Logger.new(STDOUT). Set to your Rails.logger or whatever logger you are using.
+# cache_manifest - boolean - defaults to false. If set to true, it loads the
+#     JSON file once and caches it in WebpackManifestPlugin.configuration.manifest.
+#     If false, it lazy loads per request.
+# logger - defaults to Logger.new(STDOUT). Set to your Rails.logger or whatever
+#          logger you are using.
 
 # create config/initializers/webpack_manifest_plugin.rb file and
 # configure it for your app.

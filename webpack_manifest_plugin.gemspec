@@ -9,8 +9,8 @@ Gem::Specification.new do |spec|
   spec.version       = WebpackManifestPlugin::VERSION
   spec.authors       = ['ed-mare']
 
-  spec.summary       = 'Gem that work with npm webpack_manifest_plugin.'
-  spec.description   = 'Includes view helpers for injecting paths into Rails template and rake tasks.'
+  spec.summary       = 'Gem that work with node webpack_manifest_plugin.'
+  spec.description   = 'Provides a view helper for injecting asset paths managed by Webpack into Rails templates plus rake tasks.'
   spec.homepage      = 'https://github.com/ed-mare/webpack-manifest-plugin'
   spec.license       = 'MIT'
 
