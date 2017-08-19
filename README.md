@@ -1,10 +1,14 @@
 # WebpackManifestPlugin
 
-This gem provides a way to use assets managed with `webpack` in Rails templates. JavaScript package  [webpack-manifest-plugin](https://www.npmjs.com/package/webpack-manifest-plugin) outputs a JSON file that maps assets to file paths. File paths can change depending on a webpack configuration -- a development config usually doesn't version assets while a production config does. Webpack updates CSS and JavaScript files with the file paths it outputs, but not Rails templates. This gem provides a view helper for including these assets in Rails views.
+This Ruby gem provides a way to use assets managed with `webpack` in Rails templates. JavaScript package  [webpack-manifest-plugin](https://www.npmjs.com/package/webpack-manifest-plugin) outputs a JSON file that maps assets to file paths. File paths can change depending on a webpack configuration -- a development config usually doesn't version assets while a production config does. Webpack updates CSS and JavaScript files with the file paths it outputs but not Rails templates. This gem provides a view helper for including these assets in Rails views.
 
-**Warning** - this has not been used in a production environment - use at your own risk. Rigorous testing has not been done against different versions of Ruby and Rails -- it's been tested against Ruby 2.3.x and Rails 5.x.
+##### Warning
 
-Why use this over webpacker? If you use webpack for other projects and want to stick with how you already do things, this   provides a view helper so assets can be used in Rails templates and that's it.
+This has not been used in a production environment - use at your own risk. Rigorous testing has not been done against different versions of Ruby and Rails -- it has been tested against Ruby 2.3.x and Rails 5.x.
+
+##### Who would use this?
+
+Those who already have a webpack asset workflow and only need to reference webpack assets in Rails templates. Otherwise, use [webpacker](https://github.com/rails/webpacker).
 
 ## Usage
 
