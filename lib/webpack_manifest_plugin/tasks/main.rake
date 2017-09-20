@@ -15,8 +15,8 @@ namespace :webpack_manifest_plugin do
 
   desc "Run webpack. Assumes webpack is installed at node_modules/webpack/bin/webpack.
   Use with or without options. Examples:
-     rake webpack:build
-     rake webpack:build['-d --config webpack.config.prod.js']"
+     rake webpack_manifest_plugin:build
+     rake webpack_manifest_plugin:build['-d --config webpack.config.prod.js']"
   task :build, :options do |_t, args|
     cmd = "#{WebpackManifestPlugin.configuration.webpack_cmd} #{args[:options]}"
     puts "Executing #{cmd}..."

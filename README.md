@@ -10,6 +10,10 @@ This has not been used in a production environment - use at your own risk. Rigor
 
 Those who already have a webpack asset workflow and only need to reference webpack assets in Rails templates. Otherwise, use [webpacker](https://github.com/rails/webpacker).
 
+##### Example App
+
+https://github.com/ed-mare/webpackmanifestplugin-example
+
 ## Usage
 
 **1) Install the [webpack-manifest-plugin](https://www.npmjs.com/package/webpack-manifest-plugin):**
@@ -41,20 +45,26 @@ And manage your assets as you normally do with webpack.
 # i,e.,
 webpack -d -w
 ```
-There is a rake task for running webpack. The advantage to using this is that ctrl-c-ing the rake task will stop webpack in watch  mode (for some reason ctrl-c doesn't stop webpack on my Ubuntu machine).
+There is a rake task for running webpack. Ctrl-c kills it when in watch mode.
 
 ```shell
 # i,e.,
-rake webpack:build
+rake webpack_manifest_plugin:build
 
 # with options
-rake webpack:build['-d -w --config webpack.config.prod.js']"
+rake webpack_manifest_plugin:build['-d -w --config webpack.config.prod.js']"
 ```
 
 **3) Add this gem to your Rails application Gemfile and run `bundle`:**
 
 ```ruby
 gem 'webpack_manifest_plugin'
+```
+
+And then execute:
+
+```ruby
+bundle
 ```
 
 If you are creating a new Rails app, skip sprockets and yarn (unless you need yarn).
@@ -150,11 +160,12 @@ docker-compose run --rm gem
 bundle console
 
 # run tests
-rake spec # (or bundle exec rspec)
+rspec
 ```
 
 ## Todo
 
+- Test with Rails 4.1 app. Assuming it works with Rails 4.1/4.2.
 - Test rake tasks.
 
 ## Contributing
