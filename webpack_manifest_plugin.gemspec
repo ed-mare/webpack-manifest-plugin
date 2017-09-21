@@ -9,15 +9,16 @@ Gem::Specification.new do |spec|
   spec.version       = WebpackManifestPlugin::VERSION
   spec.authors       = ['ed-mare']
 
-  spec.summary       = 'Gem that work with node webpack_manifest_plugin.'
-  spec.description   = 'Provides a view helper for injecting asset paths managed by Webpack into Rails templates plus rake tasks.'
+  spec.summary       = 'Gem that work with node manifest-webpack-plugin.'
+  spec.description   = "Gem that work with node manifest-webpack-plugin. A view helper
+                        for using webpack managed assets in Rails templates."
   spec.homepage      = 'https://github.com/ed-mare/webpack_manifest_plugin'
   spec.license       = 'MIT'
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
   # to allow pushing to a single host or delete this section to allow pushing to any host.
   if spec.respond_to?(:metadata)
-    spec.metadata['allowed_push_host'] = "https://rubygems.org"
+    spec.metadata['allowed_push_host'] = 'https://rubygems.org'
   else
     raise 'RubyGems 2.0 or newer is required to protect against ' \
       'public gem pushes.'

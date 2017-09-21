@@ -3,7 +3,7 @@ require 'pty'
 
 namespace :webpack_manifest_plugin do
   desc 'Deletes all files in <app root>/public/assets.'
-  task :clean do
+  task clean: :environment do
     app_root = WebpackManifestPlugin.app_root.to_s
     folder = File.join(app_root, 'public/assets')
     if !app_root.empty? && Dir.exist?(folder)
@@ -17,7 +17,7 @@ namespace :webpack_manifest_plugin do
   Use with or without options. Examples:
      rake webpack_manifest_plugin:build
      rake webpack_manifest_plugin:build['-d --config webpack.config.prod.js']"
-  task :build, :options do |_t, args|
+  task :build, [:options] => :environment do |_task, args|
     cmd = "#{WebpackManifestPlugin.configuration.webpack_cmd} #{args[:options]}"
     puts "Executing #{cmd}..."
 
