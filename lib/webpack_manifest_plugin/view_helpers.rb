@@ -22,8 +22,8 @@ module WebpackManifestPlugin
     # it logs the error and returns an empty string.
     def webpack_manifest_path(key)
       webpack_manifest_configs[key] || key
-    rescue StandardError => ex
-      WebpackManifestPlugin.logger.warn "Error parsing webpack manifest JSON. #{ex.message}"
+    rescue StandardError => e
+      WebpackManifestPlugin.logger.warn "Error parsing webpack manifest JSON. #{e.message}"
       ''
     end
 

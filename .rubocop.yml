@@ -1,6 +1,6 @@
 AllCops:
   Exclude:
-    - 'spec/test_app/*'
+    - 'spec/test_app/**/*'
     - spec/controllers/main_controller_spec.rb
 Metrics/LineLength:
   Max: 120
@@ -12,3 +12,5 @@ Metrics/BlockLength:
     - 'spec/**/*'
     - 'lib/webpack_manifest_plugin/tasks/main.rake'
     - 'webpack_manifest_plugin.gemspec'
+Style/FrozenStringLiteralComment:
+  Enabled: false
