@@ -33,16 +33,17 @@ Gem::Specification.new do |spec|
   spec.bindir        = 'exe'
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ['lib']
-  spec.required_ruby_version = '>= 2.1'
+  spec.required_ruby_version = '>= 2.5'
 
   spec.add_dependency 'oj', '~> 3.0'
   spec.add_dependency 'railties', '>= 4.1'
   spec.add_dependency 'activesupport', '>= 4.1'
 
-  spec.add_development_dependency 'bundler', '~> 1.13'
-  spec.add_development_dependency 'rake', '~> 10.0'
+  spec.add_development_dependency 'bundler'
+  spec.add_development_dependency 'rake', '~> 13.0.1'
   spec.add_development_dependency 'rspec', '~> 3.0'
-  spec.add_development_dependency 'rails', '>= 4.1'
-  spec.add_development_dependency 'rspec-rails', '>= 3.5'
+  spec.add_development_dependency 'rails', '5.2.4.4'
+  spec.add_development_dependency 'rspec-rails', '4.0.1'
   spec.add_development_dependency 'rubocop', '>= 0.47'
+  spec.add_development_dependency 'bundler-audit'
 end

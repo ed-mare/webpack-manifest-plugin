@@ -2,10 +2,6 @@
 
 This Ruby gem provides a way to use assets managed with `webpack` in Rails templates. JavaScript package  [webpack-manifest-plugin](https://www.npmjs.com/package/webpack-manifest-plugin) outputs a JSON file that maps assets to file paths. File paths can change depending on a webpack configuration -- a development config usually doesn't version assets while a production config does. Webpack updates CSS and JavaScript files with the file paths it outputs but not Rails templates. This gem provides a view helper for including these assets in Rails views.
 
-##### Warning
-
-This has not been used in a production environment - use at your own risk. Rigorous testing has not been done against different versions of Ruby and Rails -- it has been tested against Ruby 2.3.x and Rails 5.x.
-
 ##### Who would use this?
 
 Those who already have a webpack asset workflow and only need to reference webpack assets in Rails templates. Otherwise, use [webpacker](https://github.com/rails/webpacker).
@@ -144,7 +140,7 @@ Specify the hash key in the `webpack_manifest_path` view helper:
 1) Build the docker image:
 
 ```shell
-docker-compose build
+docker-compose build --no-cache
 ```
 
 2) Start docker image with an interactive bash shell:
@@ -160,12 +156,21 @@ docker-compose run --rm gem
 bundle console
 
 # run tests
-rspec
+bin/rspec
+
+# check for vulnerabilities
+ bin/bundler-audit --update
+
+# lint
+#   Uncomment this is docker-compose if using -A flag:
+#    volumes:
+#       - .:/home/gems/mygem
+bundle exec rubocop lib spec
 ```
 
 ## Todo
 
-- Test with Rails 4.1 app. Assuming it works with Rails 4.1/4.2.
+- Test with Rails 6 app.
 - Test rake tasks.
 
 ## Contributing

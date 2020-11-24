@@ -1,4 +1,4 @@
-FROM ruby:2.3.3
+FROM ruby:2.5
 
 # RUN apt-get install curl
 # RUN curl -sL https://deb.nodesource.com/setup | bash - && \
