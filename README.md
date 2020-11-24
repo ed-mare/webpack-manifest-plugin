@@ -151,9 +151,12 @@ docker-compose run --rm gem
 
 3) Once in bash session, code, run tests, start console, etc.
 
+*Run bundle install if binstubs are missing or install only the executables
+you need. Be sure they are excluded in .gitignore.*
+
 ```shell
 # run console with gem loaded
-bundle console
+bin/console
 
 # run tests
 bin/rspec
@@ -162,10 +165,8 @@ bin/rspec
  bin/bundler-audit --update
 
 # lint
-#   Uncomment this is docker-compose if using -A flag:
-#    volumes:
-#       - .:/home/gems/mygem
-bundle exec rubocop lib spec
+#
+bin/rubocop lib spec
 ```
 
 ## Todo

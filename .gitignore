@@ -11,3 +11,13 @@
 /spec/test_app/tmp/*
 .tags*
 *.gem
+/gems/
+/specifications/
+/bundler.lock
+/extensions
+/build_info
+/cache
+/bin/bundle-audit
+/bin/bundler-audit
+/bin/rspec
+/bin/rubocop
